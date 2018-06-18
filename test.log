@@ -1,0 +1,678 @@
+2018-06-18 08:54:32.605  INFO 1592 --- [restartedMain] b.c.d.WdbintegrationApiApplication       : Starting WdbintegrationApiApplication on UDI-H6SGQM2 with PID 1592 (C:\Everis\workspace\stsbundle\wdbintegration-api\target\classes started by wborgesa in C:\Everis\workspace\stsbundle\wdbintegration-api)
+2018-06-18 08:54:32.605  INFO 1592 --- [restartedMain] b.c.d.WdbintegrationApiApplication       : No active profile set, falling back to default profiles: default
+2018-06-18 08:54:32.647  INFO 1592 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b9e5dc: startup date [Mon Jun 18 08:54:32 BRT 2018]; root of context hierarchy
+2018-06-18 08:54:33.658  INFO 1592 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-06-18 08:54:33.674  INFO 1592 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-18 08:54:33.674  INFO 1592 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-06-18 08:54:33.747  INFO 1592 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-18 08:54:33.747  INFO 1592 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1101 ms
+2018-06-18 08:54:33.883  INFO 1592 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-06-18 08:54:33.886  INFO 1592 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-18 08:54:33.887  INFO 1592 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-18 08:54:33.887  INFO 1592 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-18 08:54:33.887  INFO 1592 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-18 08:54:34.157  INFO 1592 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b9e5dc: startup date [Mon Jun 18 08:54:32 BRT 2018]; root of context hierarchy
+2018-06-18 08:54:34.201  INFO 1592 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object/supplier],methods=[POST]}" onto public java.util.List<br.com.library.wlibrary.att.Supplier> br.com.dbintegrationapi.resource.ObjectResource.supplier(br.com.library.wlibrary.core.DataQuery)
+2018-06-18 08:54:34.202  INFO 1592 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object/salesman],methods=[POST]}" onto public java.util.List<br.com.library.wlibrary.att.Salesman> br.com.dbintegrationapi.resource.ObjectResource.salesman(br.com.library.wlibrary.core.DataQuery)
+2018-06-18 08:54:34.202  INFO 1592 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object/payment],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> br.com.dbintegrationapi.resource.ObjectResource.payment(br.com.library.wlibrary.core.DataQuery)
+2018-06-18 08:54:34.204  INFO 1592 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-18 08:54:34.204  INFO 1592 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-18 08:54:34.227  INFO 1592 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-18 08:54:34.228  INFO 1592 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-18 08:54:34.261  INFO 1592 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-18 08:54:34.387  INFO 1592 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-06-18 08:54:34.432  INFO 1592 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-18 08:54:34.460  INFO 1592 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-06-18 08:54:34.463  INFO 1592 --- [restartedMain] b.c.d.WdbintegrationApiApplication       : Started WdbintegrationApiApplication in 2.071 seconds (JVM running for 2.555)
+2018-06-18 08:55:21.618  INFO 1592 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-18 08:55:21.619  INFO 1592 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-18 08:55:21.635  INFO 1592 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-06-18 08:55:21.688  INFO 1592 --- [http-nio-8080-exec-2] b.c.dbintegrationapi.dao.IntegrationDao  : Executing query:
+2018-06-18 08:55:21.688  INFO 1592 --- [http-nio-8080-exec-2] b.c.dbintegrationapi.dao.IntegrationDao  : null:ritz:root
+2018-06-18 08:55:21.688  INFO 1592 --- [http-nio-8080-exec-2] b.c.dbintegrationapi.dao.IntegrationDao  : SELECT * FROM vendedor WHERE empresa_id = 51
+2018-06-18 08:55:21.712 ERROR 1592 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: Problemas ao recuperar a lista de vendedores. [Microsoft][ODBC Driver Manager] O DSN especificado cont?m uma incompatibilidade de arquiteturas entre o Driver e o Aplicativo] with root cause
+
+java.sql.SQLException: [Microsoft][ODBC Driver Manager] O DSN especificado cont?m uma incompatibilidade de arquiteturas entre o Driver e o Aplicativo
+	at sun.jdbc.odbc.JdbcOdbc.createSQLException(JdbcOdbc.java:6964) ~[na:1.7.0_80]
+	at sun.jdbc.odbc.JdbcOdbc.standardError(JdbcOdbc.java:7121) ~[na:1.7.0_80]
+	at sun.jdbc.odbc.JdbcOdbc.SQLDriverConnect(JdbcOdbc.java:3080) ~[na:1.7.0_80]
+	at sun.jdbc.odbc.JdbcOdbcConnection.initialize(JdbcOdbcConnection.java:323) ~[na:1.7.0_80]
+	at sun.jdbc.odbc.JdbcOdbcDriver.connect(JdbcOdbcDriver.java:174) ~[na:1.7.0_80]
+	at java.sql.DriverManager.getConnection(DriverManager.java:571) ~[na:1.7.0_80]
+	at java.sql.DriverManager.getConnection(DriverManager.java:215) ~[na:1.7.0_80]
+	at br.com.dbintegrationapi.dao.Dao.getConnection(Dao.java:60) ~[classes/:na]
+	at br.com.dbintegrationapi.dao.IntegrationDao.listSalesman(IntegrationDao.java:148) ~[classes/:na]
+	at br.com.dbintegrationapi.resource.ObjectResource.salesman(ObjectResource.java:29) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_80]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.7.0_80]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.7.0_80]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[na:1.7.0_80]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [na:1.7.0_80]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [na:1.7.0_80]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_80]
+
+2018-06-18 08:57:03.771  INFO 1592 --- [Thread-6] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b9e5dc: startup date [Mon Jun 18 08:54:32 BRT 2018]; root of context hierarchy
+2018-06-18 08:57:03.774  INFO 1592 --- [Thread-6] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-06-18 08:57:04.037  INFO 1592 --- [restartedMain] b.c.d.WdbintegrationApiApplication       : Starting WdbintegrationApiApplication on UDI-H6SGQM2 with PID 1592 (C:\Everis\workspace\stsbundle\wdbintegration-api\target\classes started by wborgesa in C:\Everis\workspace\stsbundle\wdbintegration-api)
+2018-06-18 08:57:04.037  INFO 1592 --- [restartedMain] b.c.d.WdbintegrationApiApplication       : No active profile set, falling back to default profiles: default
+2018-06-18 08:57:04.040  INFO 1592 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1df24ba: startup date [Mon Jun 18 08:57:04 BRT 2018]; root of context hierarchy
+2018-06-18 08:57:04.847  INFO 1592 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-06-18 08:57:04.848  INFO 1592 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-18 08:57:04.849  INFO 1592 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-06-18 08:57:04.873  INFO 1592 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-18 08:57:04.874  INFO 1592 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 834 ms
+2018-06-18 08:57:04.904  INFO 1592 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-06-18 08:57:04.904  INFO 1592 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-18 08:57:04.904  INFO 1592 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-18 08:57:04.904  INFO 1592 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-18 08:57:04.905  INFO 1592 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-18 08:57:05.022  INFO 1592 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1df24ba: startup date [Mon Jun 18 08:57:04 BRT 2018]; root of context hierarchy
+2018-06-18 08:57:05.031  INFO 1592 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object/supplier],methods=[POST]}" onto public java.util.List<br.com.library.wlibrary.att.Supplier> br.com.dbintegrationapi.resource.ObjectResource.supplier(br.com.library.wlibrary.core.DataQuery)
+2018-06-18 08:57:05.032  INFO 1592 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object/salesman],methods=[POST]}" onto public java.util.List<br.com.library.wlibrary.att.Salesman> br.com.dbintegrationapi.resource.ObjectResource.salesman(br.com.library.wlibrary.core.DataQuery)
+2018-06-18 08:57:05.032  INFO 1592 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object/payment],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> br.com.dbintegrationapi.resource.ObjectResource.payment(br.com.library.wlibrary.core.DataQuery)
+2018-06-18 08:57:05.034  INFO 1592 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-18 08:57:05.035  INFO 1592 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-18 08:57:05.042  INFO 1592 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-18 08:57:05.043  INFO 1592 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-18 08:57:05.059  INFO 1592 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-18 08:57:05.088  INFO 1592 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-06-18 08:57:05.177  INFO 1592 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-18 08:57:05.210  INFO 1592 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-06-18 08:57:05.214  INFO 1592 --- [restartedMain] b.c.d.WdbintegrationApiApplication       : Started WdbintegrationApiApplication in 1.217 seconds (JVM running for 153.305)
+2018-06-18 08:57:13.717  INFO 1592 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-06-18 08:57:13.718  INFO 1592 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1df24ba: startup date [Mon Jun 18 08:57:04 BRT 2018]; root of context hierarchy
+2018-06-18 08:57:13.719  INFO 1592 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-06-18 08:57:25.224  INFO 22912 --- [restartedMain] b.c.d.WdbintegrationApiApplication       : Starting WdbintegrationApiApplication on UDI-H6SGQM2 with PID 22912 (C:\Everis\workspace\stsbundle\wdbintegration-api\target\classes started by wborgesa in C:\Everis\workspace\stsbundle\wdbintegration-api)
+2018-06-18 08:57:25.225  INFO 22912 --- [restartedMain] b.c.d.WdbintegrationApiApplication       : No active profile set, falling back to default profiles: default
+2018-06-18 08:57:25.317  INFO 22912 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d05da96: startup date [Mon Jun 18 08:57:25 BRT 2018]; root of context hierarchy
+2018-06-18 08:57:26.839  INFO 22912 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-06-18 08:57:26.860  INFO 22912 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-18 08:57:26.860  INFO 22912 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-06-18 08:57:26.939  INFO 22912 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-18 08:57:26.940  INFO 22912 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1627 ms
+2018-06-18 08:57:27.127  INFO 22912 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-06-18 08:57:27.132  INFO 22912 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-18 08:57:27.133  INFO 22912 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-18 08:57:27.133  INFO 22912 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-18 08:57:27.133  INFO 22912 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-18 08:57:27.531  INFO 22912 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d05da96: startup date [Mon Jun 18 08:57:25 BRT 2018]; root of context hierarchy
+2018-06-18 08:57:27.596  INFO 22912 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object/salesman],methods=[POST]}" onto public java.util.List<br.com.library.wlibrary.att.Salesman> br.com.dbintegrationapi.resource.ObjectResource.salesman(br.com.library.wlibrary.core.DataQuery)
+2018-06-18 08:57:27.597  INFO 22912 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object/payment],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> br.com.dbintegrationapi.resource.ObjectResource.payment(br.com.library.wlibrary.core.DataQuery)
+2018-06-18 08:57:27.598  INFO 22912 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object/supplier],methods=[POST]}" onto public java.util.List<br.com.library.wlibrary.att.Supplier> br.com.dbintegrationapi.resource.ObjectResource.supplier(br.com.library.wlibrary.core.DataQuery)
+2018-06-18 08:57:27.600  INFO 22912 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-18 08:57:27.601  INFO 22912 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-18 08:57:27.644  INFO 22912 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-18 08:57:27.645  INFO 22912 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-18 08:57:27.711  INFO 22912 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-18 08:57:27.949  INFO 22912 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-06-18 08:57:28.063  INFO 22912 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-18 08:57:28.143  INFO 22912 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-06-18 08:57:28.148  INFO 22912 --- [restartedMain] b.c.d.WdbintegrationApiApplication       : Started WdbintegrationApiApplication in 3.239 seconds (JVM running for 3.827)
+2018-06-18 08:57:38.941  INFO 22912 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-18 08:57:38.941  INFO 22912 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-18 08:57:38.971  INFO 22912 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2018-06-18 08:57:39.045  INFO 22912 --- [http-nio-8080-exec-1] b.c.dbintegrationapi.dao.IntegrationDao  : Executing query:
+2018-06-18 08:57:39.045  INFO 22912 --- [http-nio-8080-exec-1] b.c.dbintegrationapi.dao.IntegrationDao  : null:ritz:root
+2018-06-18 08:57:39.045  INFO 22912 --- [http-nio-8080-exec-1] b.c.dbintegrationapi.dao.IntegrationDao  : SELECT * FROM vendedor WHERE empresa_id = 51
+2018-06-18 08:57:40.172 ERROR 22912 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: Problemas ao recuperar a lista de vendedores. [MySQL][ODBC 8.0(a) Driver]Access denied for user 'root'@'localhost' (using password: YES)] with root cause
+
+java.sql.SQLException: [MySQL][ODBC 8.0(a) Driver]Access denied for user 'root'@'localhost' (using password: YES)
+	at sun.jdbc.odbc.JdbcOdbc.createSQLException(JdbcOdbc.java:6964) ~[na:1.7.0_80]
+	at sun.jdbc.odbc.JdbcOdbc.standardError(JdbcOdbc.java:7121) ~[na:1.7.0_80]
+	at sun.jdbc.odbc.JdbcOdbc.SQLDriverConnect(JdbcOdbc.java:3080) ~[na:1.7.0_80]
+	at sun.jdbc.odbc.JdbcOdbcConnection.initialize(JdbcOdbcConnection.java:323) ~[na:1.7.0_80]
+	at sun.jdbc.odbc.JdbcOdbcDriver.connect(JdbcOdbcDriver.java:174) ~[na:1.7.0_80]
+	at java.sql.DriverManager.getConnection(DriverManager.java:571) ~[na:1.7.0_80]
+	at java.sql.DriverManager.getConnection(DriverManager.java:215) ~[na:1.7.0_80]
+	at br.com.dbintegrationapi.dao.Dao.getConnection(Dao.java:60) ~[classes/:na]
+	at br.com.dbintegrationapi.dao.IntegrationDao.listSalesman(IntegrationDao.java:148) ~[classes/:na]
+	at br.com.dbintegrationapi.resource.ObjectResource.salesman(ObjectResource.java:29) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_80]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.7.0_80]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.7.0_80]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[na:1.7.0_80]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [na:1.7.0_80]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [na:1.7.0_80]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_80]
+
+2018-06-18 09:00:21.370  INFO 22912 --- [http-nio-8080-exec-2] b.c.dbintegrationapi.dao.IntegrationDao  : Executing query:
+2018-06-18 09:00:21.371  INFO 22912 --- [http-nio-8080-exec-2] b.c.dbintegrationapi.dao.IntegrationDao  : null:ritz:root
+2018-06-18 09:00:21.371  INFO 22912 --- [http-nio-8080-exec-2] b.c.dbintegrationapi.dao.IntegrationDao  : SELECT * FROM vendedor WHERE empresa_id = 51
+2018-06-18 09:00:22.496 ERROR 22912 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: Problemas ao recuperar a lista de vendedores. [MySQL][ODBC 8.0(a) Driver]Access denied for user 'root'@'localhost' (using password: YES)] with root cause
+
+java.sql.SQLException: [MySQL][ODBC 8.0(a) Driver]Access denied for user 'root'@'localhost' (using password: YES)
+	at sun.jdbc.odbc.JdbcOdbc.createSQLException(JdbcOdbc.java:6964) ~[na:1.7.0_80]
+	at sun.jdbc.odbc.JdbcOdbc.standardError(JdbcOdbc.java:7121) ~[na:1.7.0_80]
+	at sun.jdbc.odbc.JdbcOdbc.SQLDriverConnect(JdbcOdbc.java:3080) ~[na:1.7.0_80]
+	at sun.jdbc.odbc.JdbcOdbcConnection.initialize(JdbcOdbcConnection.java:323) ~[na:1.7.0_80]
+	at sun.jdbc.odbc.JdbcOdbcDriver.connect(JdbcOdbcDriver.java:174) ~[na:1.7.0_80]
+	at java.sql.DriverManager.getConnection(DriverManager.java:571) ~[na:1.7.0_80]
+	at java.sql.DriverManager.getConnection(DriverManager.java:215) ~[na:1.7.0_80]
+	at br.com.dbintegrationapi.dao.Dao.getConnection(Dao.java:60) ~[classes/:na]
+	at br.com.dbintegrationapi.dao.IntegrationDao.listSalesman(IntegrationDao.java:148) ~[classes/:na]
+	at br.com.dbintegrationapi.resource.ObjectResource.salesman(ObjectResource.java:29) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_80]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.7.0_80]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.7.0_80]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[na:1.7.0_80]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [na:1.7.0_80]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [na:1.7.0_80]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_80]
+
+2018-06-18 09:02:31.958  INFO 22912 --- [http-nio-8080-exec-3] b.c.dbintegrationapi.dao.IntegrationDao  : Executing query:
+2018-06-18 09:02:31.958  INFO 22912 --- [http-nio-8080-exec-3] b.c.dbintegrationapi.dao.IntegrationDao  : null:ritz:root
+2018-06-18 09:02:31.958  INFO 22912 --- [http-nio-8080-exec-3] b.c.dbintegrationapi.dao.IntegrationDao  : SELECT * FROM vendedor WHERE empresa_id = 51
+2018-06-18 09:02:33.078 ERROR 22912 --- [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: Problemas ao recuperar a lista de vendedores. [MySQL][ODBC 8.0(a) Driver][mysqld-8.0.11]Table 'ritz.vendedor' doesn't exist] with root cause
+
+java.sql.SQLException: [MySQL][ODBC 8.0(a) Driver][mysqld-8.0.11]Table 'ritz.vendedor' doesn't exist
+	at sun.jdbc.odbc.JdbcOdbc.createSQLException(JdbcOdbc.java:6964) ~[na:1.7.0_80]
+	at sun.jdbc.odbc.JdbcOdbc.standardError(JdbcOdbc.java:7121) ~[na:1.7.0_80]
+	at sun.jdbc.odbc.JdbcOdbc.SQLExecDirect(JdbcOdbc.java:3117) ~[na:1.7.0_80]
+	at sun.jdbc.odbc.JdbcOdbcStatement.execute(JdbcOdbcStatement.java:337) ~[na:1.7.0_80]
+	at sun.jdbc.odbc.JdbcOdbcStatement.executeQuery(JdbcOdbcStatement.java:252) ~[na:1.7.0_80]
+	at br.com.dbintegrationapi.dao.IntegrationDao.listSalesman(IntegrationDao.java:151) ~[classes/:na]
+	at br.com.dbintegrationapi.resource.ObjectResource.salesman(ObjectResource.java:29) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_80]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.7.0_80]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.7.0_80]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[na:1.7.0_80]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [na:1.7.0_80]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [na:1.7.0_80]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_80]
+
+2018-06-18 10:09:42.803  INFO 22912 --- [Thread-6] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d05da96: startup date [Mon Jun 18 08:57:25 BRT 2018]; root of context hierarchy
+2018-06-18 10:09:42.845  INFO 22912 --- [Thread-6] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-06-18 10:09:43.404  INFO 22912 --- [restartedMain] b.c.d.WdbintegrationApiApplication       : Starting WdbintegrationApiApplication on UDI-H6SGQM2 with PID 22912 (C:\Everis\workspace\stsbundle\wdbintegration-api\target\classes started by wborgesa in C:\Everis\workspace\stsbundle\wdbintegration-api)
+2018-06-18 10:09:43.405  INFO 22912 --- [restartedMain] b.c.d.WdbintegrationApiApplication       : No active profile set, falling back to default profiles: default
+2018-06-18 10:09:43.410  INFO 22912 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6371ea0c: startup date [Mon Jun 18 10:09:43 BRT 2018]; root of context hierarchy
+2018-06-18 10:09:44.070  INFO 22912 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-06-18 10:09:44.071  INFO 22912 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-18 10:09:44.071  INFO 22912 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-06-18 10:09:44.097  INFO 22912 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-18 10:09:44.098  INFO 22912 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 688 ms
+2018-06-18 10:09:44.149  INFO 22912 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-06-18 10:09:44.149  INFO 22912 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-18 10:09:44.149  INFO 22912 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-18 10:09:44.150  INFO 22912 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-18 10:09:44.150  INFO 22912 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-18 10:09:44.283  INFO 22912 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6371ea0c: startup date [Mon Jun 18 10:09:43 BRT 2018]; root of context hierarchy
+2018-06-18 10:09:44.295  INFO 22912 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object/salesman],methods=[POST]}" onto public java.util.List<br.com.library.wlibrary.att.Salesman> br.com.dbintegrationapi.resource.ObjectResource.salesman(br.com.library.wlibrary.core.DataQuery)
+2018-06-18 10:09:44.296  INFO 22912 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object/payment],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> br.com.dbintegrationapi.resource.ObjectResource.payment(br.com.library.wlibrary.core.DataQuery)
+2018-06-18 10:09:44.296  INFO 22912 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object/supplier],methods=[POST]}" onto public java.util.List<br.com.library.wlibrary.att.Supplier> br.com.dbintegrationapi.resource.ObjectResource.supplier(br.com.library.wlibrary.core.DataQuery)
+2018-06-18 10:09:44.298  INFO 22912 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-18 10:09:44.299  INFO 22912 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-18 10:09:44.307  INFO 22912 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-18 10:09:44.307  INFO 22912 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-18 10:09:44.322  INFO 22912 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-18 10:09:44.366  INFO 22912 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-06-18 10:09:44.422  INFO 22912 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-18 10:09:44.436  INFO 22912 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-06-18 10:09:44.440  INFO 22912 --- [restartedMain] b.c.d.WdbintegrationApiApplication       : Started WdbintegrationApiApplication in 1.098 seconds (JVM running for 4340.119)
+2018-06-18 10:10:33.606  INFO 22912 --- [Thread-10] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6371ea0c: startup date [Mon Jun 18 10:09:43 BRT 2018]; root of context hierarchy
+2018-06-18 10:10:33.613  INFO 22912 --- [Thread-10] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-06-18 10:10:34.003  INFO 22912 --- [restartedMain] b.c.d.WdbintegrationApiApplication       : Starting WdbintegrationApiApplication on UDI-H6SGQM2 with PID 22912 (C:\Everis\workspace\stsbundle\wdbintegration-api\target\classes started by wborgesa in C:\Everis\workspace\stsbundle\wdbintegration-api)
+2018-06-18 10:10:34.004  INFO 22912 --- [restartedMain] b.c.d.WdbintegrationApiApplication       : No active profile set, falling back to default profiles: default
+2018-06-18 10:10:34.006  INFO 22912 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5887b9fa: startup date [Mon Jun 18 10:10:34 BRT 2018]; root of context hierarchy
+2018-06-18 10:10:34.487  INFO 22912 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-06-18 10:10:34.488  INFO 22912 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-18 10:10:34.488  INFO 22912 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-06-18 10:10:34.504  INFO 22912 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-18 10:10:34.504  INFO 22912 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 498 ms
+2018-06-18 10:10:34.529  INFO 22912 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-06-18 10:10:34.530  INFO 22912 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-18 10:10:34.530  INFO 22912 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-18 10:10:34.530  INFO 22912 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-18 10:10:34.530  INFO 22912 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-18 10:10:34.621  INFO 22912 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5887b9fa: startup date [Mon Jun 18 10:10:34 BRT 2018]; root of context hierarchy
+2018-06-18 10:10:34.631  INFO 22912 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object/salesman],methods=[POST]}" onto public java.util.List<br.com.library.wlibrary.att.Salesman> br.com.dbintegrationapi.resource.ObjectResource.salesman(br.com.library.wlibrary.core.DataQuery)
+2018-06-18 10:10:34.632  INFO 22912 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object/payment],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> br.com.dbintegrationapi.resource.ObjectResource.payment(br.com.library.wlibrary.core.DataQuery)
+2018-06-18 10:10:34.633  INFO 22912 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object/supplier],methods=[POST]}" onto public java.util.List<br.com.library.wlibrary.att.Supplier> br.com.dbintegrationapi.resource.ObjectResource.supplier(br.com.library.wlibrary.core.DataQuery)
+2018-06-18 10:10:34.643  INFO 22912 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-18 10:10:34.644  INFO 22912 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-18 10:10:34.662  INFO 22912 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-18 10:10:34.662  INFO 22912 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-18 10:10:34.677  INFO 22912 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-18 10:10:34.719  INFO 22912 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-06-18 10:10:34.767  INFO 22912 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-18 10:10:34.779  INFO 22912 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-06-18 10:10:34.781  INFO 22912 --- [restartedMain] b.c.d.WdbintegrationApiApplication       : Started WdbintegrationApiApplication in 0.812 seconds (JVM running for 4390.46)
+2018-06-18 10:10:49.358  INFO 22912 --- [Thread-16] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5887b9fa: startup date [Mon Jun 18 10:10:34 BRT 2018]; root of context hierarchy
+2018-06-18 10:10:49.360  INFO 22912 --- [Thread-16] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-06-18 10:10:49.676  INFO 22912 --- [restartedMain] b.c.d.WdbintegrationApiApplication       : Starting WdbintegrationApiApplication on UDI-H6SGQM2 with PID 22912 (C:\Everis\workspace\stsbundle\wdbintegration-api\target\classes started by wborgesa in C:\Everis\workspace\stsbundle\wdbintegration-api)
+2018-06-18 10:10:49.676  INFO 22912 --- [restartedMain] b.c.d.WdbintegrationApiApplication       : No active profile set, falling back to default profiles: default
+2018-06-18 10:10:49.679  INFO 22912 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7555559a: startup date [Mon Jun 18 10:10:49 BRT 2018]; root of context hierarchy
+2018-06-18 10:10:50.049  INFO 22912 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-06-18 10:10:50.050  INFO 22912 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-18 10:10:50.051  INFO 22912 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-06-18 10:10:50.066  INFO 22912 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-18 10:10:50.067  INFO 22912 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 388 ms
+2018-06-18 10:10:50.086  INFO 22912 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-06-18 10:10:50.086  INFO 22912 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-18 10:10:50.086  INFO 22912 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-18 10:10:50.086  INFO 22912 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-18 10:10:50.086  INFO 22912 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-18 10:10:50.160  INFO 22912 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7555559a: startup date [Mon Jun 18 10:10:49 BRT 2018]; root of context hierarchy
+2018-06-18 10:10:50.167  INFO 22912 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object/salesman],methods=[POST]}" onto public java.util.List<br.com.library.wlibrary.att.Salesman> br.com.dbintegrationapi.resource.ObjectResource.salesman(br.com.library.wlibrary.core.DataQuery)
+2018-06-18 10:10:50.167  INFO 22912 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object/payment],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> br.com.dbintegrationapi.resource.ObjectResource.payment(br.com.library.wlibrary.core.DataQuery)
+2018-06-18 10:10:50.168  INFO 22912 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object/supplier],methods=[POST]}" onto public java.util.List<br.com.library.wlibrary.att.Supplier> br.com.dbintegrationapi.resource.ObjectResource.supplier(br.com.library.wlibrary.core.DataQuery)
+2018-06-18 10:10:50.169  INFO 22912 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-18 10:10:50.169  INFO 22912 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-18 10:10:50.174  INFO 22912 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-18 10:10:50.174  INFO 22912 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-18 10:10:50.185  INFO 22912 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-18 10:10:50.215  INFO 22912 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-06-18 10:10:50.240  INFO 22912 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-18 10:10:50.249  INFO 22912 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-06-18 10:10:50.250  INFO 22912 --- [restartedMain] b.c.d.WdbintegrationApiApplication       : Started WdbintegrationApiApplication in 0.609 seconds (JVM running for 4405.929)
+2018-06-18 10:11:15.585  INFO 22912 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-06-18 10:11:15.585  INFO 22912 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7555559a: startup date [Mon Jun 18 10:10:49 BRT 2018]; root of context hierarchy
+2018-06-18 10:11:15.587  INFO 22912 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-06-18 13:58:30.774  INFO 10560 --- [restartedMain] b.c.d.WdbintegrationApiApplication       : Starting WdbintegrationApiApplication on UDI-H6SGQM2 with PID 10560 (C:\Everis\workspace\stsbundle\wdbintegration-api\target\classes started by wborgesa in C:\Everis\workspace\stsbundle\wdbintegration-api)
+2018-06-18 13:58:30.790  INFO 10560 --- [restartedMain] b.c.d.WdbintegrationApiApplication       : No active profile set, falling back to default profiles: default
+2018-06-18 13:58:30.874  INFO 10560 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@38d2b21a: startup date [Mon Jun 18 13:58:30 BRT 2018]; root of context hierarchy
+2018-06-18 13:58:32.266  INFO 10560 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-06-18 13:58:32.287  INFO 10560 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-18 13:58:32.287  INFO 10560 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-06-18 13:58:32.365  INFO 10560 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-18 13:58:32.365  INFO 10560 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1494 ms
+2018-06-18 13:58:32.549  INFO 10560 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-06-18 13:58:32.550  INFO 10560 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-18 13:58:32.550  INFO 10560 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-18 13:58:32.550  INFO 10560 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-18 13:58:32.550  INFO 10560 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-18 13:58:32.938  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@38d2b21a: startup date [Mon Jun 18 13:58:30 BRT 2018]; root of context hierarchy
+2018-06-18 13:58:33.008  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object/payment],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> br.com.dbintegrationapi.resource.ObjectResource.payment(br.com.library.wlibrary.core.DataQuery)
+2018-06-18 13:58:33.008  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object/supplier],methods=[POST]}" onto public java.util.List<br.com.library.wlibrary.att.Supplier> br.com.dbintegrationapi.resource.ObjectResource.supplier(br.com.library.wlibrary.core.DataQuery)
+2018-06-18 13:58:33.008  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object/salesman],methods=[POST]}" onto public java.util.List<br.com.library.wlibrary.att.Salesman> br.com.dbintegrationapi.resource.ObjectResource.salesman(br.com.library.wlibrary.core.DataQuery)
+2018-06-18 13:58:33.008  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> br.com.dbintegrationapi.resource.ObjectResource.getDataQuery()
+2018-06-18 13:58:33.008  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-18 13:58:33.008  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-18 13:58:33.054  INFO 10560 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-18 13:58:33.054  INFO 10560 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-18 13:58:33.123  INFO 10560 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-18 13:58:33.360  INFO 10560 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-06-18 13:58:33.493  INFO 10560 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-18 13:58:33.549  INFO 10560 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-06-18 13:58:33.555  INFO 10560 --- [restartedMain] b.c.d.WdbintegrationApiApplication       : Started WdbintegrationApiApplication in 3.039 seconds (JVM running for 3.577)
+2018-06-18 13:59:13.504  INFO 10560 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-18 13:59:13.511  INFO 10560 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-18 13:59:13.527  INFO 10560 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-06-18 14:01:32.284  INFO 10560 --- [http-nio-8080-exec-5] b.c.dbintegrationapi.dao.IntegrationDao  : Executing query:
+2018-06-18 14:01:32.284  INFO 10560 --- [http-nio-8080-exec-5] b.c.dbintegrationapi.dao.IntegrationDao  : null:ritz:root
+2018-06-18 14:01:32.284  INFO 10560 --- [http-nio-8080-exec-5] b.c.dbintegrationapi.dao.IntegrationDao  : select * from fornecedor 
+2018-06-18 14:03:00.312  INFO 10560 --- [Thread-6] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@38d2b21a: startup date [Mon Jun 18 13:58:30 BRT 2018]; root of context hierarchy
+2018-06-18 14:03:00.319  INFO 10560 --- [Thread-6] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-06-18 14:03:00.668  INFO 10560 --- [restartedMain] b.c.d.WdbintegrationApiApplication       : Starting WdbintegrationApiApplication on UDI-H6SGQM2 with PID 10560 (C:\Everis\workspace\stsbundle\wdbintegration-api\target\classes started by wborgesa in C:\Everis\workspace\stsbundle\wdbintegration-api)
+2018-06-18 14:03:00.668  INFO 10560 --- [restartedMain] b.c.d.WdbintegrationApiApplication       : No active profile set, falling back to default profiles: default
+2018-06-18 14:03:00.672  INFO 10560 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b8bcec2: startup date [Mon Jun 18 14:03:00 BRT 2018]; root of context hierarchy
+2018-06-18 14:03:01.253  INFO 10560 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-06-18 14:03:01.254  INFO 10560 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-18 14:03:01.254  INFO 10560 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-06-18 14:03:01.277  INFO 10560 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-18 14:03:01.278  INFO 10560 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 606 ms
+2018-06-18 14:03:01.308  INFO 10560 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-06-18 14:03:01.308  INFO 10560 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-18 14:03:01.308  INFO 10560 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-18 14:03:01.309  INFO 10560 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-18 14:03:01.309  INFO 10560 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-18 14:03:01.429  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b8bcec2: startup date [Mon Jun 18 14:03:00 BRT 2018]; root of context hierarchy
+2018-06-18 14:03:01.442  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object/payment],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> br.com.dbintegrationapi.resource.ObjectResource.payment(br.com.library.wlibrary.core.DataQuery)
+2018-06-18 14:03:01.443  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object/supplier],methods=[POST]}" onto public java.util.List<br.com.library.wlibrary.att.Supplier> br.com.dbintegrationapi.resource.ObjectResource.supplier(br.com.library.wlibrary.core.DataQuery)
+2018-06-18 14:03:01.443  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object/salesman],methods=[POST]}" onto public java.util.List<br.com.library.wlibrary.att.Salesman> br.com.dbintegrationapi.resource.ObjectResource.salesman(br.com.library.wlibrary.core.DataQuery)
+2018-06-18 14:03:01.444  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> br.com.dbintegrationapi.resource.ObjectResource.getDataQuery()
+2018-06-18 14:03:01.447  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-18 14:03:01.448  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-18 14:03:01.458  INFO 10560 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-18 14:03:01.459  INFO 10560 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-18 14:03:01.478  INFO 10560 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-18 14:03:01.528  INFO 10560 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-06-18 14:03:01.603  INFO 10560 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-18 14:03:01.616  INFO 10560 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-06-18 14:03:01.619  INFO 10560 --- [restartedMain] b.c.d.WdbintegrationApiApplication       : Started WdbintegrationApiApplication in 0.998 seconds (JVM running for 271.641)
+2018-06-18 14:03:54.802  INFO 10560 --- [Thread-10] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b8bcec2: startup date [Mon Jun 18 14:03:00 BRT 2018]; root of context hierarchy
+2018-06-18 14:03:54.804  INFO 10560 --- [Thread-10] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-06-18 14:03:55.134  INFO 10560 --- [restartedMain] b.c.d.WdbintegrationApiApplication       : Starting WdbintegrationApiApplication on UDI-H6SGQM2 with PID 10560 (C:\Everis\workspace\stsbundle\wdbintegration-api\target\classes started by wborgesa in C:\Everis\workspace\stsbundle\wdbintegration-api)
+2018-06-18 14:03:55.134  INFO 10560 --- [restartedMain] b.c.d.WdbintegrationApiApplication       : No active profile set, falling back to default profiles: default
+2018-06-18 14:03:55.134  INFO 10560 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@73f5c083: startup date [Mon Jun 18 14:03:55 BRT 2018]; root of context hierarchy
+2018-06-18 14:03:55.577  INFO 10560 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-06-18 14:03:55.578  INFO 10560 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-18 14:03:55.579  INFO 10560 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-06-18 14:03:55.595  INFO 10560 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-18 14:03:55.596  INFO 10560 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 462 ms
+2018-06-18 14:03:55.625  INFO 10560 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-06-18 14:03:55.625  INFO 10560 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-18 14:03:55.626  INFO 10560 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-18 14:03:55.626  INFO 10560 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-18 14:03:55.626  INFO 10560 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-18 14:03:55.728  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@73f5c083: startup date [Mon Jun 18 14:03:55 BRT 2018]; root of context hierarchy
+2018-06-18 14:03:55.729  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object/payment],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> br.com.dbintegrationapi.resource.ObjectResource.payment(br.com.library.wlibrary.core.DataQuery)
+2018-06-18 14:03:55.729  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object/supplier],methods=[POST]}" onto public java.util.List<br.com.library.wlibrary.att.Supplier> br.com.dbintegrationapi.resource.ObjectResource.supplier(br.com.library.wlibrary.core.DataQuery)
+2018-06-18 14:03:55.729  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object/salesman],methods=[POST]}" onto public java.util.List<br.com.library.wlibrary.att.Salesman> br.com.dbintegrationapi.resource.ObjectResource.salesman(br.com.library.wlibrary.core.DataQuery)
+2018-06-18 14:03:55.729  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> br.com.dbintegrationapi.resource.ObjectResource.getDataQuery()
+2018-06-18 14:03:55.729  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-18 14:03:55.729  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-18 14:03:55.745  INFO 10560 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-18 14:03:55.745  INFO 10560 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-18 14:03:55.760  INFO 10560 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-18 14:03:55.807  INFO 10560 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-06-18 14:03:55.851  INFO 10560 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-18 14:03:55.851  INFO 10560 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-06-18 14:03:55.866  INFO 10560 --- [restartedMain] b.c.d.WdbintegrationApiApplication       : Started WdbintegrationApiApplication in 0.776 seconds (JVM running for 325.888)
+2018-06-18 14:04:36.868  INFO 10560 --- [Thread-16] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@73f5c083: startup date [Mon Jun 18 14:03:55 BRT 2018]; root of context hierarchy
+2018-06-18 14:04:36.874  INFO 10560 --- [Thread-16] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-06-18 14:04:37.149  INFO 10560 --- [restartedMain] b.c.d.WdbintegrationApiApplication       : Starting WdbintegrationApiApplication on UDI-H6SGQM2 with PID 10560 (C:\Everis\workspace\stsbundle\wdbintegration-api\target\classes started by wborgesa in C:\Everis\workspace\stsbundle\wdbintegration-api)
+2018-06-18 14:04:37.149  INFO 10560 --- [restartedMain] b.c.d.WdbintegrationApiApplication       : No active profile set, falling back to default profiles: default
+2018-06-18 14:04:37.149  INFO 10560 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52c15d02: startup date [Mon Jun 18 14:04:37 BRT 2018]; root of context hierarchy
+2018-06-18 14:04:37.641  INFO 10560 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-06-18 14:04:37.642  INFO 10560 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-18 14:04:37.643  INFO 10560 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-06-18 14:04:37.662  INFO 10560 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-18 14:04:37.662  INFO 10560 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 513 ms
+2018-06-18 14:04:37.675  INFO 10560 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-06-18 14:04:37.675  INFO 10560 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-18 14:04:37.675  INFO 10560 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-18 14:04:37.675  INFO 10560 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-18 14:04:37.675  INFO 10560 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-18 14:04:37.791  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52c15d02: startup date [Mon Jun 18 14:04:37 BRT 2018]; root of context hierarchy
+2018-06-18 14:04:37.794  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object/payment],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> br.com.dbintegrationapi.resource.ObjectResource.payment(br.com.library.wlibrary.core.DataQuery)
+2018-06-18 14:04:37.794  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object/supplier],methods=[POST]}" onto public java.util.List<br.com.library.wlibrary.att.Supplier> br.com.dbintegrationapi.resource.ObjectResource.supplier(br.com.library.wlibrary.core.DataQuery)
+2018-06-18 14:04:37.794  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object/salesman],methods=[POST]}" onto public java.util.List<br.com.library.wlibrary.att.Salesman> br.com.dbintegrationapi.resource.ObjectResource.salesman(br.com.library.wlibrary.core.DataQuery)
+2018-06-18 14:04:37.794  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> br.com.dbintegrationapi.resource.ObjectResource.getDataQuery()
+2018-06-18 14:04:37.794  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-18 14:04:37.794  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-18 14:04:37.810  INFO 10560 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-18 14:04:37.810  INFO 10560 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-18 14:04:37.831  INFO 10560 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-18 14:04:37.851  INFO 10560 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-06-18 14:04:37.894  INFO 10560 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-18 14:04:37.897  INFO 10560 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-06-18 14:04:37.897  INFO 10560 --- [restartedMain] b.c.d.WdbintegrationApiApplication       : Started WdbintegrationApiApplication in 0.78 seconds (JVM running for 367.919)
+2018-06-18 14:06:12.352  INFO 10560 --- [Thread-22] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52c15d02: startup date [Mon Jun 18 14:04:37 BRT 2018]; root of context hierarchy
+2018-06-18 14:06:12.359  INFO 10560 --- [Thread-22] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-06-18 14:06:12.619  INFO 10560 --- [restartedMain] b.c.d.WdbintegrationApiApplication       : Starting WdbintegrationApiApplication on UDI-H6SGQM2 with PID 10560 (C:\Everis\workspace\stsbundle\wdbintegration-api\target\classes started by wborgesa in C:\Everis\workspace\stsbundle\wdbintegration-api)
+2018-06-18 14:06:12.619  INFO 10560 --- [restartedMain] b.c.d.WdbintegrationApiApplication       : No active profile set, falling back to default profiles: default
+2018-06-18 14:06:12.619  INFO 10560 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5097d220: startup date [Mon Jun 18 14:06:12 BRT 2018]; root of context hierarchy
+2018-06-18 14:06:13.435  INFO 10560 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-06-18 14:06:13.437  INFO 10560 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-18 14:06:13.437  INFO 10560 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-06-18 14:06:13.462  INFO 10560 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-18 14:06:13.462  INFO 10560 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 843 ms
+2018-06-18 14:06:13.484  INFO 10560 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-06-18 14:06:13.484  INFO 10560 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-18 14:06:13.484  INFO 10560 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-18 14:06:13.484  INFO 10560 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-18 14:06:13.484  INFO 10560 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-18 14:06:13.635  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5097d220: startup date [Mon Jun 18 14:06:12 BRT 2018]; root of context hierarchy
+2018-06-18 14:06:13.648  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object/supplier],methods=[POST]}" onto public java.util.List<br.com.library.wlibrary.att.NonWorkdays> br.com.dbintegrationapi.resource.ObjectResource.nonWorkdays(br.com.library.wlibrary.core.DataQuery)
+2018-06-18 14:06:13.648  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object/payment],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> br.com.dbintegrationapi.resource.ObjectResource.payment(br.com.library.wlibrary.core.DataQuery)
+2018-06-18 14:06:13.649  WARN 10560 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'objectResource' method 
+public java.util.List<br.com.library.wlibrary.att.Supplier> br.com.dbintegrationapi.resource.ObjectResource.supplier(br.com.library.wlibrary.core.DataQuery)
+to {[/object/supplier],methods=[POST]}: There is already 'objectResource' bean method
+public java.util.List<br.com.library.wlibrary.att.NonWorkdays> br.com.dbintegrationapi.resource.ObjectResource.nonWorkdays(br.com.library.wlibrary.core.DataQuery) mapped.
+2018-06-18 14:06:13.650  INFO 10560 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-06-18 14:06:13.657  INFO 10560 --- [restartedMain] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-06-18 14:06:13.668 ERROR 10560 --- [restartedMain] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'objectResource' method 
+public java.util.List<br.com.library.wlibrary.att.Supplier> br.com.dbintegrationapi.resource.ObjectResource.supplier(br.com.library.wlibrary.core.DataQuery)
+to {[/object/supplier],methods=[POST]}: There is already 'objectResource' bean method
+public java.util.List<br.com.library.wlibrary.att.NonWorkdays> br.com.dbintegrationapi.resource.ObjectResource.nonWorkdays(br.com.library.wlibrary.core.DataQuery) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1630) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at br.com.dbintegrationapi.WdbintegrationApiApplication.main(WdbintegrationApiApplication.java:10) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_80]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.7.0_80]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.7.0_80]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[na:1.7.0_80]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'objectResource' method 
+public java.util.List<br.com.library.wlibrary.att.Supplier> br.com.dbintegrationapi.resource.ObjectResource.supplier(br.com.library.wlibrary.core.DataQuery)
+to {[/object/supplier],methods=[POST]}: There is already 'objectResource' bean method
+public java.util.List<br.com.library.wlibrary.att.NonWorkdays> br.com.dbintegrationapi.resource.ObjectResource.nonWorkdays(br.com.library.wlibrary.core.DataQuery) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:576) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:540) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:264) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:250) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:214) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:184) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:127) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1688) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1626) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	... 21 common frames omitted
+
+2018-06-18 14:06:24.689  INFO 10560 --- [restartedMain] b.c.d.WdbintegrationApiApplication       : Starting WdbintegrationApiApplication on UDI-H6SGQM2 with PID 10560 (C:\Everis\workspace\stsbundle\wdbintegration-api\target\classes started by wborgesa in C:\Everis\workspace\stsbundle\wdbintegration-api)
+2018-06-18 14:06:24.689  INFO 10560 --- [restartedMain] b.c.d.WdbintegrationApiApplication       : No active profile set, falling back to default profiles: default
+2018-06-18 14:06:24.689  INFO 10560 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2ad67c36: startup date [Mon Jun 18 14:06:24 BRT 2018]; root of context hierarchy
+2018-06-18 14:06:25.174  INFO 10560 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-06-18 14:06:25.174  INFO 10560 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-18 14:06:25.174  INFO 10560 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-06-18 14:06:25.189  INFO 10560 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2018-06-18 14:06:25.189  INFO 10560 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 500 ms
+2018-06-18 14:06:25.221  INFO 10560 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-06-18 14:06:25.221  INFO 10560 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-18 14:06:25.221  INFO 10560 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-18 14:06:25.221  INFO 10560 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-18 14:06:25.221  INFO 10560 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-18 14:06:25.358  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2ad67c36: startup date [Mon Jun 18 14:06:24 BRT 2018]; root of context hierarchy
+2018-06-18 14:06:25.368  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object/nonWorkdays],methods=[POST]}" onto public java.util.List<br.com.library.wlibrary.att.NonWorkdays> br.com.dbintegrationapi.resource.ObjectResource.nonWorkdays(br.com.library.wlibrary.core.DataQuery)
+2018-06-18 14:06:25.368  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object/payment],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> br.com.dbintegrationapi.resource.ObjectResource.payment(br.com.library.wlibrary.core.DataQuery)
+2018-06-18 14:06:25.369  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object/supplier],methods=[POST]}" onto public java.util.List<br.com.library.wlibrary.att.Supplier> br.com.dbintegrationapi.resource.ObjectResource.supplier(br.com.library.wlibrary.core.DataQuery)
+2018-06-18 14:06:25.369  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object/salesman],methods=[POST]}" onto public java.util.List<br.com.library.wlibrary.att.Salesman> br.com.dbintegrationapi.resource.ObjectResource.salesman(br.com.library.wlibrary.core.DataQuery)
+2018-06-18 14:06:25.370  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> br.com.dbintegrationapi.resource.ObjectResource.getDataQuery()
+2018-06-18 14:06:25.370  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/object/comission],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> br.com.dbintegrationapi.resource.ObjectResource.comission(br.com.library.wlibrary.core.DataQuery)
+2018-06-18 14:06:25.372  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-18 14:06:25.372  INFO 10560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-18 14:06:25.379  INFO 10560 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-18 14:06:25.380  INFO 10560 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-18 14:06:25.396  INFO 10560 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-18 14:06:25.428  INFO 10560 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-06-18 14:06:25.460  INFO 10560 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-18 14:06:25.467  INFO 10560 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-06-18 14:06:25.469  INFO 10560 --- [restartedMain] b.c.d.WdbintegrationApiApplication       : Started WdbintegrationApiApplication in 0.82 seconds (JVM running for 475.491)
+2018-06-18 14:06:45.079  INFO 10560 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-06-18 14:06:45.079  INFO 10560 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2ad67c36: startup date [Mon Jun 18 14:06:24 BRT 2018]; root of context hierarchy
+2018-06-18 14:06:45.081  INFO 10560 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
