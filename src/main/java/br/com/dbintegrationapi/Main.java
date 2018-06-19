@@ -17,7 +17,7 @@ public class Main {
 		dataQuery.setProvider("ODBC");
 		dataQuery.setNameDataBase("ritz");
 		dataQuery.setUserDataBase("root");
-		dataQuery.setPasswordDataBase("master");
+		dataQuery.setPasswordDataBase("root");
 		
 
 		dao.testConnection(dataQuery);

@@ -58,7 +58,7 @@ public class IntegrationDao extends Dao {
 		Statement sts = null;
 		BigDecimal amount = new BigDecimal(0);
 		DataResult dataResult = new DataResult();
-		
+
 		print(dataQuery);
 
 		try {
@@ -70,7 +70,7 @@ public class IntegrationDao extends Dao {
 				while (rs.next())
 					amount = rs.getBigDecimal("total_comissao");
 			}
-			
+
 			dataResult.setType("DataResult");
 			dataResult.setValue(amount);
 
@@ -89,7 +89,7 @@ public class IntegrationDao extends Dao {
 		Statement sts = null;
 
 		print(dataQuery);
-		
+
 		DataResult dataResult = new DataResult();
 
 		try {
@@ -98,7 +98,7 @@ public class IntegrationDao extends Dao {
 			sts = con.createStatement();
 			PreparedStatement stmt = con.prepareStatement(dataQuery.getQuery()); // operacao READ
 			stmt.executeUpdate();
-			
+
 			dataResult.setType("String");
 			dataResult.setValue("Success");
 
@@ -108,7 +108,7 @@ public class IntegrationDao extends Dao {
 
 			closeConnection();
 		}
-		
+
 		return dataResult;
 	}
 
@@ -212,6 +212,11 @@ public class IntegrationDao extends Dao {
 	}
 
 	private void print(DataQuery dataQuery) {
+
+		logger.info("java.vendor: " + System.getProperty("java.vendor"));
+		logger.info("java.vendor.url: " + System.getProperty("java.vendor.url"));
+		logger.info("java.version: " + System.getProperty("java.version"));
+		logger.info("sun.arch.data.model: " + System.getProperty("sun.arch.data.model"));
 
 		logger.info("Executing query:");
 		logger.info(dataQuery.getHost() + ":" + dataQuery.getNameDataBase() + ":" + dataQuery.getUserDataBase());

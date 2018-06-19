@@ -1,0 +1,6 @@
+br\com\dbintegrationapi\resource\ObjectResource.class
+br\com\dbintegrationapi\Main.class
+br\com\dbintegrationapi\ServletInitializer.class
+br\com\dbintegrationapi\dao\IntegrationDao.class
+br\com\dbintegrationapi\WdbintegrationApiApplication.class
+br\com\dbintegrationapi\dao\Dao.class
