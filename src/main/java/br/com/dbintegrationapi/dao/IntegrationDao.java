@@ -1,6 +1,5 @@
 package br.com.dbintegrationapi.dao;
 
-import java.math.BigDecimal;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -56,7 +55,7 @@ public class IntegrationDao extends Dao {
 
 		Connection con = null;
 		Statement sts = null;
-		BigDecimal amount = new BigDecimal(0);
+		Double amount = new Double(0);
 		DataResult dataResult = new DataResult();
 
 		print(dataQuery);
@@ -68,7 +67,7 @@ public class IntegrationDao extends Dao {
 
 			try (ResultSet rs = sts.executeQuery(dataQuery.getQuery())) {
 				while (rs.next())
-					amount.add(rs.getBigDecimal("total_comissao"));
+					amount += rs.getDouble("total_comissao");
 			}
 
 			dataResult.setType("DataResult");
