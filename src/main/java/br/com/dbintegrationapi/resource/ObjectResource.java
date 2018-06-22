@@ -2,6 +2,8 @@ package br.com.dbintegrationapi.resource;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,6 +23,8 @@ import br.com.library.wlibrary.core.DataQuery;
 @RequestMapping("/object")
 public class ObjectResource {
 
+	private static final Logger logger = LoggerFactory.getLogger(IntegrationDao.class);
+	
 	@Autowired
 	private IntegrationDao integrationDao;
 
@@ -43,6 +47,7 @@ public class ObjectResource {
 		try {
 			return integrationDao.listSalesman(dataQuery);
 		} catch (Exception e) {
+			logger.error(e.getMessage(), e);
 			throw new RuntimeException("Problemas ao recuperar a lista de vendedores. " + e.getMessage(), e);
 		}
 	}
@@ -53,6 +58,7 @@ public class ObjectResource {
 		try {
 			return integrationDao.listSupplier(dataQuery);
 		} catch (Exception e) {
+			logger.error(e.getMessage(), e);
 			throw new RuntimeException("Problemas ao recuperar a lista de forncedores. " + e.getMessage(), e);
 		}
 	}
@@ -63,6 +69,7 @@ public class ObjectResource {
 		try {
 			return ResponseEntity.status(HttpStatus.OK).body(integrationDao.insertPayment(dataQuery));
 		} catch (Exception e) {
+			logger.error(e.getMessage(), e);
 			throw new RuntimeException("Problemas ao executar insert de pagamento. " + e.getMessage(), e);
 		}
 	}
@@ -73,6 +80,7 @@ public class ObjectResource {
 		try {
 			return ResponseEntity.status(HttpStatus.OK).body(integrationDao.getComission(dataQuery));
 		} catch (Exception e) {
+			logger.error(e.getMessage(), e);
 			throw new RuntimeException("Problemas ao recuperar comissao. " + e.getMessage(), e);
 		}
 	}
@@ -84,6 +92,7 @@ public class ObjectResource {
 		try {
 			return integrationDao.listNonWorkdays(dataQuery);
 		} catch (Exception e) {
+			logger.error(e.getMessage(), e);
 			throw new RuntimeException("Problemas ao recuperar a lista de forncedores. " + e.getMessage(), e);
 		}
 	}

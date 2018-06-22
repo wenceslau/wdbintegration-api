@@ -1,13 +1,11 @@
 package br.com.dbintegrationapi;
 
-import java.sql.SQLException;
-
 import br.com.dbintegrationapi.dao.IntegrationDao;
 import br.com.library.wlibrary.core.DataQuery;
 
 public class Main {
 
-	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		System.out.println("Main.main()");
 
@@ -17,10 +15,10 @@ public class Main {
 		dataQuery.setProvider("ODBC");
 		dataQuery.setNameDataBase("ritz");
 		dataQuery.setUserDataBase("root");
-		dataQuery.setPasswordDataBase("root");
+		dataQuery.setPasswordDataBase("master");
+		dataQuery.setQuery("select * from feriado");
 		
-
-		dao.testConnection(dataQuery);
+		dao.listNonWorkdays(dataQuery);
 	}
 
 }

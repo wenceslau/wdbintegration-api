@@ -5,6 +5,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -198,11 +200,14 @@ public class IntegrationDao extends Dao {
 
 			con = getConnection(dataQuery);
 			sts = con.createStatement();
+			
+			DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
 
 			try (ResultSet rs = sts.executeQuery(dataQuery.getQuery())) {
 				while (rs.next()) {
 					nonWorkdays = new NonWorkdays();
 					nonWorkdays.setDateNonWorkday(rs.getDate("data"));
+					nonWorkdays.setStrDateNonWorkday(format.format(nonWorkdays.getDateNonWorkday()));
 					nonWorkdays.setDescription(rs.getString("descricao"));
 					listNonWorkdays.add(nonWorkdays);
 				}
@@ -222,18 +227,14 @@ public class IntegrationDao extends Dao {
 
 	private void print(DataQuery dataQuery) {
 
-		logger.info("java.vendor: " + System.getProperty("java.vendor"));
-		logger.info("java.vendor.url: " + System.getProperty("java.vendor.url"));
-		logger.info("java.version: " + System.getProperty("java.version"));
-		logger.info("sun.arch.data.model: " + System.getProperty("sun.arch.data.model"));
-
-		logger.info("Executing query:");
+		logger.info("Executing DataQuery:");
 		logger.info(dataQuery.getHost() + ":" + dataQuery.getNameDataBase() + ":" + dataQuery.getUserDataBase());
 		logger.info(dataQuery.getQuery());
 
 	}
 
 	private void print(DataResult dataResult) {
+		logger.info("Return DataResult:");
 		logger.info("dataResult.getType: " + dataResult.getType());
 		logger.info("dataResult.getValue: " + dataResult.getValue());
 	}
