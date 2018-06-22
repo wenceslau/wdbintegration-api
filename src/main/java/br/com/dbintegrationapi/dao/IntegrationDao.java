@@ -68,11 +68,13 @@ public class IntegrationDao extends Dao {
 
 			try (ResultSet rs = sts.executeQuery(dataQuery.getQuery())) {
 				while (rs.next())
-					amount = rs.getBigDecimal("total_comissao");
+					amount.add(rs.getBigDecimal("total_comissao"));
 			}
 
 			dataResult.setType("DataResult");
 			dataResult.setValue(amount);
+
+			print(dataResult);
 
 		} finally {
 			if (sts != null)
@@ -101,6 +103,8 @@ public class IntegrationDao extends Dao {
 
 			dataResult.setType("String");
 			dataResult.setValue("Success");
+
+			print(dataResult);
 
 		} finally {
 			if (sts != null)
@@ -137,6 +141,8 @@ public class IntegrationDao extends Dao {
 				}
 			}
 
+			logger.info("listSupplier: " + listSupplier);
+
 		} finally {
 			if (sts != null)
 				sts.close();
@@ -169,6 +175,8 @@ public class IntegrationDao extends Dao {
 				}
 			}
 
+			logger.info("listSalesman: " + listSalesman);
+
 		} finally {
 			if (sts != null)
 				sts.close();
@@ -183,7 +191,7 @@ public class IntegrationDao extends Dao {
 		Connection con = null;
 		Statement sts = null;
 		NonWorkdays nonWorkdays;
-		List<NonWorkdays> list = new ArrayList<>();
+		List<NonWorkdays> listNonWorkdays = new ArrayList<>();
 
 		print(dataQuery);
 
@@ -197,9 +205,11 @@ public class IntegrationDao extends Dao {
 					nonWorkdays = new NonWorkdays();
 					nonWorkdays.setDateNonWorkday(rs.getDate("data"));
 					nonWorkdays.setDescription(rs.getString("descricao"));
-					list.add(nonWorkdays);
+					listNonWorkdays.add(nonWorkdays);
 				}
 			}
+
+			logger.info("listNonWorkdays: " + listNonWorkdays);
 
 		} finally {
 			if (sts != null)
@@ -208,7 +218,7 @@ public class IntegrationDao extends Dao {
 			closeConnection();
 		}
 
-		return list;
+		return listNonWorkdays;
 	}
 
 	private void print(DataQuery dataQuery) {
@@ -222,6 +232,11 @@ public class IntegrationDao extends Dao {
 		logger.info(dataQuery.getHost() + ":" + dataQuery.getNameDataBase() + ":" + dataQuery.getUserDataBase());
 		logger.info(dataQuery.getQuery());
 
+	}
+
+	private void print(DataResult dataResult) {
+		logger.info("dataResult.getType: " + dataResult.getType());
+		logger.info("dataResult.getValue: " + dataResult.getValue());
 	}
 
 }
