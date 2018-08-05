@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Implementation-Title: wdbintegration-api
 Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: wborgesa
+Built-By: Wenceslau
 Implementation-Vendor-Id: br.com.dbintegration-api
-Build-Jdk: 1.8.0_161
+Build-Jdk: 1.8.0_172
 Implementation-URL: http://projects.spring.io/spring-boot/wdbintegrati
  on-api/
 Created-By: Maven Integration for Eclipse
